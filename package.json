@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-game-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ash4477/pokemon-game-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Ash4477/pokemon-game-server/issues"
+  },
+  "homepage": "https://github.com/Ash4477/pokemon-game-server#readme"
+}
