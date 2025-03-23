@@ -48,7 +48,7 @@ connectDB().then(() => {
     }
   });
 
-  server.listen(8080, () =>
+  server.listen(5000, () =>
     console.log("🚀 Server running on http://localhost:8080")
   );
 });
