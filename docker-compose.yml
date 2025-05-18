@@ -5,6 +5,8 @@ services:
     build: ./odin-memory-card
     ports:
       - "3000:80"
+    environment:
+      - VITE_GIPHY_API_KEY=R8W7zlVPaABPJARkY0G3z543Ue2Apd4g
     depends_on:
       - backend
 
