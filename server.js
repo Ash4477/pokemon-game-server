@@ -62,7 +62,7 @@ const pokeList = [
 // Connect to MongoDB
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/pokemon_data");
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("✅ MongoDB Connected");
   } catch (error) {
     console.error("❌ MongoDB Connection Error:", error);
@@ -115,7 +115,7 @@ connectDB().then(async () => {
     }
   });
 
-  server.listen(5000, () =>
+  server.listen(process.env.PORT, "0.0.0.0", () =>
     console.log("🚀 Server running on http://localhost:5000")
   );
 });
