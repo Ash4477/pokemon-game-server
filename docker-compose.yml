@@ -2,14 +2,14 @@ version: "3"
 
 services:
   frontend:
-    build: ./frontend
+    build: ./odin-memory-card
     ports:
       - "3000:80"
     depends_on:
       - backend
 
   backend:
-    build: ./backend
+    build: ./pokemon-game-server
     ports:
       - "5000:5000"
     environment:
